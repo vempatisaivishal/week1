@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Counter</title>
+</head>
+
+<body>
+
+    <h1>New stopwatch</h1>
+    <div id="counter"></div>
+    <script>
+        var count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+            setTimeout(incrementCounter, 1000);//here I am going under recursion as never ending process
+        }
+
+        setTimeout(incrementCounter, 1000);
+    </script>
+</body>
+
+</html>
+<!--
+    here created function which sending to counter
+    later now inside it sending the element
+    setTimeout sending function and 1000 as 1 second and same stopwatch rather than using setInterval
+-->
