@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Counter</title>
+</head>
+
+<body>
+    <h1>stopwatch</h1>
+    <div id="counter"></div>
+    <script>
+        var count = 0;
+        var interval = setInterval(function () {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }, 1000);
+    </script>
+</body>
+
+</html>
+<!--
+    the task I included is 
+    created div id of counter which is used to show the counter value
+    set Interval is having function which is increasing count and putting it in the counter id
+    1000 is 1000 milli seconds which is equal to 1 second
+-->
